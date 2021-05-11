@@ -2,7 +2,7 @@ import { SanProject } from './models/san-project'
 import { Renderer } from './models/renderer'
 import { ComponentConstructor } from 'san'
 import { CompileOptions } from './target-js/compilers/compile-options'
-import * as TypeGuards from './ast/san-type-guards'
+import * as TypeGuards from './ast/san-ast-type-guards'
 
 // util functions
 export { IDGenerator } from './utils/id-generator'
@@ -12,8 +12,8 @@ export { getANodePropByName } from './ast/san-ast-util'
 export { Emitter } from './utils/emitter'
 export { TypeGuards }
 export { _ } from './runtime/underscore'
-export { SyntaxKind } from './ast/renderer-ast-node'
-export type { Expression, Statement, FunctionDefinition, VariableDefinition, Literal, MapLiteral, ArrayLiteral, UnaryExpression, Foreach, BinaryExpression, SlotRendererDefinition, SlotRenderCall } from './ast/renderer-ast-node'
+export { SyntaxKind } from './ast/renderer-ast-dfn'
+export type { Expression, Statement, FunctionDefinition, VariableDefinition, Literal, MapLiteral, ArrayLiteral, UnaryExpression, Foreach, BinaryExpression, SlotRendererDefinition, SlotRenderCall } from './ast/renderer-ast-dfn'
 export { assertNever } from './utils/lang'
 
 // class types

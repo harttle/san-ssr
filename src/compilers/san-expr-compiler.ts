@@ -2,10 +2,10 @@
  * 编译源码的 helper 方法集合
  */
 import { ExprStringNode, ExprNode, ExprTertiaryNode, ExprBinaryNode, ExprUnaryNode, ExprInterpNode, ExprAccessorNode, ExprCallNode, ExprTextNode, ExprObjectNode, ExprArrayNode } from 'san'
-import * as TypeGuards from '../ast/san-type-guards'
+import * as TypeGuards from '../ast/san-ast-type-guards'
 import { _ } from '../runtime/underscore'
-import { EncodeURIComponent, MapLiteral, HelperCall, ArrayLiteral, FilterCall, FunctionCall, Identifier, ConditionalExpression, BinaryExpression, UnaryExpression, Expression } from '../ast/renderer-ast-node'
-import { CTX_DATA, L, I, NULL } from '../ast/renderer-ast-factory'
+import { EncodeURIComponent, MapLiteral, HelperCall, ArrayLiteral, FilterCall, FunctionCall, Identifier, ConditionalExpression, BinaryExpression, UnaryExpression, Expression } from '../ast/renderer-ast-dfn'
+import { CTX_DATA, L, I, NULL } from '../ast/renderer-ast-util'
 
 // 输出类型
 export enum OutputType {

@@ -4,9 +4,9 @@ import { IDGenerator } from '../utils/id-generator'
 import { autoCloseTags } from '../utils/dom-util'
 import { ANodeCompiler } from './anode-compiler'
 import { ExprNode, ANodeProperty, Directive, ANode } from 'san'
-import { isExprNumberNode, isExprStringNode, isExprBoolNode } from '../ast/san-type-guards'
+import { isExprNumberNode, isExprStringNode, isExprBoolNode } from '../ast/san-ast-type-guards'
 import { createIfStrictEqual, createIfNotNull, createDefaultValue, createHTMLLiteralAppend, createHTMLExpressionAppend, NULL, L, I, ASSIGN, DEF } from '../ast/renderer-ast-factory'
-import { HelperCall, ArrayIncludes, Else, Foreach, If } from '../ast/renderer-ast-node'
+import { HelperCall, ArrayIncludes, Else, Foreach, If } from '../ast/renderer-ast-dfn'
 import { sanExpr, OutputType } from './san-expr-compiler'
 
 const BOOL_ATTRIBUTES = ['readonly', 'disabled', 'multiple', 'checked']

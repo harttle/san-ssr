@@ -1,6 +1,5 @@
-import { Expression, Literal, Statement, Identifier, Block, SyntaxNode } from '../ast/renderer-ast-node'
-import { L } from '../ast/renderer-ast-factory'
-import { isLiteral, isIdentifier, isBlock, isBinaryExpression, isExpressionStatement } from '../ast/renderer-ast-util'
+import { Expression, Literal, Statement, Identifier, Block, SyntaxNode } from '../ast/renderer-ast-dfn'
+import { L, isLiteral, isIdentifier, isBlock, isBinaryExpression, isExpressionStatement } from '../ast/renderer-ast-util'
 import { walk } from '../ast/renderer-ast-walker'
 
 type HTMLAddEqualLiteral = Statement & { value: { lhs: Identifier, op: '+=', rhs: Literal } }

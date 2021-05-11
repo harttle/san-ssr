@@ -1,6 +1,5 @@
-import { BinaryExpression, Expression, Statement } from '../ast/renderer-ast-node'
-import { isLiteral, isBinaryExpression } from '../ast/renderer-ast-util'
-import { I } from '../ast/renderer-ast-factory'
+import { BinaryExpression, Expression, Statement } from '../ast/renderer-ast-dfn'
+import { isLiteral, isBinaryExpression, I } from '../ast/renderer-ast-util'
 import { walk } from '../ast/renderer-ast-walker'
 import { isValidIdentifier } from '../utils/lang'
 
